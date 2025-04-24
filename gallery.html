@@ -70,6 +70,13 @@
       height: 200px;
       object-fit: cover;
       border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    }
+
+    .gallery-grid img:hover {
+      transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(20px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
